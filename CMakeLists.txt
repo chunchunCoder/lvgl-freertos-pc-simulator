@@ -1,0 +1,15 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.23)
+
+
+project(app)
+message(${PROJECT_NAME})
+
+
+file(GLOB_RECURSE APP_SRC_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
+file(GLOB_RECURSE APP_INC_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.h)
+
+file(GLOB_RECURSE LVGL_SRC_FILES ${CMAKE_CURRENT_SOURCE_DIR}/third-party/lvgl/src/*.c)
+file(GLOB_RECURSE LVGL_INC_FILES ${CMAKE_CURRENT_SOURCE_DIR}/third-party/lvgl/src/*.h)
+
+
+add_executable(${PROJECT_NAME} src/main.cpp)
