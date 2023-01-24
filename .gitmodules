@@ -1,3 +1,6 @@
 [submodule "third-party/lvgl"]
 	path = third-party/lvgl
 	url = git@github.com:lvgl/lvgl.git
+[submodule "third-party/FreeRTOS"]
+	path = third-party/FreeRTOS
+	url = git@github.com:FreeRTOS/FreeRTOS.git
